@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homem Vigor</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Header-->
+    <header id="navbar">
+      <div>
+        <b>Devido ao alto número de acessos, ela ficará disponível somente até: <span id="dataAtual"></span></b>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main-conteudo">
+      <!-- Section Titulo -->
+      <section class="main-titulo">
+        <h1 class="main-titulo-principal">Verifique se o seu som está ligado!</h1>
+      </section>
+
+      <!-- Video -->
+      <!-- <div class="embed-responsive embed-responsive-16by9 video">
+        <iframe
+          id="panda-4b4ad1db-db3c-4364-815c-28f43910ca30"
+          title="video-tmd"
+          style="border: none"
+          allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture"
+          allowfullscreen="true"
+          width="720"
+          height="360"
+          fetchpriority="high"
+          loading="lazy"
+        ></iframe>
+      </div> -->
+
+      <!-- Compra Pagamento -->
+      <div class="compra">
+        <h2>VAGAS RESTANTES</h2>
+        <span class="linha-2">3</span>
+        <span class="linha-3">POR APENAS</span>
+        <span class="linha-4">R$147,00</span>
+        <a class="linha-5" href="">Garantir minha Vaga!</a>
+        <span class="linha-6">(180 Dias de Garantia)</span>
+        <img src="./assets/pagamento.png" alt="pagamento" />
+      </div>
+
+      <!-- Mídia -->
+      <div class="midia">
+        <h2>ESTAMOS NA MÍDIA</h2>
+        <img src="./assets/midia.png" alt="midia" />
+      </div>
+
+      <!-- Ryan -->
+      <div class="ryan">
+        <img src="./assets/ryan.png" alt="Ryan" />
+        <h2>Ryan McLane</h2>
+        <p>
+          Ryan McLane não é apenas um ator talentoso, mas também diretor e produtor na indústria pornô. Ele dirigiu e produziu vários filmes adultos,
+          muitas vezes sendo a estrela em alguns deles. Ele foi reconhecido por seus esforços de direção ao vencer o prêmio AVN de Melhor Diretor –
+          Featurette em 2020 pelo filme “Ela não é um Anjo”. Além de seu trabalho na indústria, Ryan McLane fez aparições em filmes convencionais como
+          “Zack and Miri Make a Porno” e “The Lighthouse”.
+        </p>
+        <div class="midia-imgs">
+          <img src="./assets/midia-1.png" alt="midia 1" />
+          <img src="./assets/midia-2.png" alt="midia 2" />
+          <img src="./assets/midia-3.png" alt="midia 3" />
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script>
+    // Função para formatar a data no formato dd/mm/aa
+    function formatarData(data) {
+      const dia = String(data.getDate()).padStart(2, "0");
+      const mes = String(data.getMonth() + 1).padStart(2, "0");
+      const ano = String(data.getFullYear()).slice(-2);
+      return `${dia}/${mes}/${ano}`;
+    }
+
+    // Obter a data atual
+    const dataAtual = new Date();
+
+    // Atualizar o conteúdo do span com a data formatada
+    document.getElementById("dataAtual").textContent = formatarData(dataAtual);
+  </script>
+</html>

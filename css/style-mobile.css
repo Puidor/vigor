@@ -1,0 +1,59 @@
+@media (max-width: 600px) {
+  #navbar {
+    font-size: 11px;
+    word-spacing: -1px;
+  }
+  .main-conteudo {
+    margin-top: 1rem;
+  }
+  .main-titulo {
+    width: 90%;
+  }
+  .main-titulo-principal {
+    font-size: 26px;
+  }
+  .main-titulo-secundario {
+    font-size: 10px;
+    word-spacing: 1px;
+    letter-spacing: -1px;
+    font-family: "Poppins", sans-serif;
+  }
+  .compras {
+    width: 95%;
+  }
+  .btn-comprar-meu-produdo {
+    font-size: 14px;
+  }
+
+  .compras .img-garantia {
+    width: 300px;
+    height: 44px;
+  }
+
+  .contador-regressivo .img-garantia {
+    width: 300px;
+    height: 44px;
+  }
+
+  .garantia img {
+    width: 350px;
+    height: 192px;
+  }
+}
+
+@media (max-width: 380px) {
+  .compras .img-garantia {
+    width: 268px;
+    height: 39px;
+  }
+
+  .contador-regressivo .img-garantia {
+    width: 268px;
+    height: 39px;
+  }
+
+  .garantia img {
+    width: 250px;
+    height: 137px;
+  }
+}
