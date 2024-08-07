@@ -1,6 +1,6 @@
 @media (max-width: 600px) {
   #navbar {
-    font-size: 11px;
+    font-size: 16px;
     word-spacing: -1px;
   }
   .main-conteudo {
@@ -10,7 +10,7 @@
     width: 90%;
   }
   .main-titulo-principal {
-    font-size: 26px;
+    font-size: 18px;
   }
   .main-titulo-secundario {
     font-size: 10px;
@@ -18,42 +18,19 @@
     letter-spacing: -1px;
     font-family: "Poppins", sans-serif;
   }
-  .compras {
-    width: 95%;
-  }
-  .btn-comprar-meu-produdo {
+
+  .ryan p {
     font-size: 14px;
   }
-
-  .compras .img-garantia {
-    width: 300px;
-    height: 44px;
+  .midia h2 {
+    font-size: 25px;
+  }
+  .midia-imgs {
+    flex-direction: row;
   }
 
-  .contador-regressivo .img-garantia {
-    width: 300px;
-    height: 44px;
-  }
-
-  .garantia img {
-    width: 350px;
-    height: 192px;
-  }
-}
-
-@media (max-width: 380px) {
-  .compras .img-garantia {
-    width: 268px;
-    height: 39px;
-  }
-
-  .contador-regressivo .img-garantia {
-    width: 268px;
-    height: 39px;
-  }
-
-  .garantia img {
-    width: 250px;
-    height: 137px;
+  .midia-imgs img {
+    max-width: 45px;
+    border-radius: 10px;
   }
 }
