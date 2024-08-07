@@ -8,13 +8,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 5px;
+
+  border-radius: 30px;
+
   /* Modificar tempo de Delay - EM SEGUNDOS */
-  animation-delay: 1200s; /* 20 Min  = 20 * 60 = 1200s */
+  animation-delay: 2s; /* 20 Min  = 20 * 60 = 1200s */
 }
 
 @keyframes cssAnimation {
   to {
-    width: 100%;
+    width: 90%;
     height: 100%;
+    border: 3px solid #ff7676;
+    padding: 20px 10px;
   }
 }
