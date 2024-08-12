@@ -13,7 +13,7 @@
   border-radius: 30px;
 
   /* Modificar tempo de Delay - EM SEGUNDOS */
-  animation-delay: 2s; /* 20 Min  = 20 * 60 = 1200s */
+  animation-delay: 5s; /* 20 Min  = 20 * 60 = 1200s */
 }
 
 @keyframes cssAnimation {

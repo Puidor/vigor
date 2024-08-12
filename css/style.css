@@ -67,20 +67,10 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
-/* Video */
-.video {
-  width: 90vw !important;
-  margin: 1rem auto;
-}
-
-.video iframe {
-  width: 100%;
-}
-
 /* Compra */
 .compra {
+  margin-top: 5rem;
 }
-
 .compra h2 {
   color: red;
   font-size: 20px;
