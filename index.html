@@ -59,10 +59,10 @@
       <!-- Compra Pagamento -->
       <div class="compra escondido">
         <h2>VAGAS RESTANTES</h2>
-        <span class="linha-2">3</span>
+        <span id="counter" class="linha-2">200</span>
         <span class="linha-3">POR APENAS</span>
         <span class="linha-4">R$147,00</span>
-        <a class="linha-5" href="">Garantir minha Vaga!</a>
+        <a class="linha-5" href="https://payment.ticto.app/OF963AE98">Garantir minha Vaga!</a>
         <span class="linha-6">(180 Dias de Garantia)</span>
         <img src="./assets/pagamento.png" alt="pagamento" />
       </div>
@@ -95,14 +95,13 @@
     <footer>
       <div class="footer-content">
         <div class="footer-menu">
-          <p>Política de Privacidade</p>
-          <p>Termos De Uso</p>
-          <p>Contato</p>
+          <p><a href="https://aumentomatrix.com/politicasdeprivacidade">Política de Privacidade</a></p>
+          <p><a href="https://aumentomatrix.com/termosdeuso">Termos De Uso</a></p>
+          <p><a href="https://aumentomatrix.com/contato">Contato</a></p>
         </div>
         <img src="./assets/logo.png" alt="Logo" />
         <div class="footer-descr">
           <p>GrowthMatrix – Todos os Direitos Reservados ©</p>
-          <p>CNPJ: 38.539.467/0001-87</p>
         </div>
         <div class="footer-end">
           Esse site não é afiliado ao Facebook ou qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e
@@ -129,5 +128,33 @@
 
     // Atualizar o conteúdo do span com a data formatada
     document.getElementById("dataAtual").textContent = formatarData(dataAtual);
+  </script>
+
+  <script>
+    // Seleciona o elemento <span> pelo seu ID
+    const counterElement = document.getElementById("counter");
+
+    // Define o valor inicial do contador
+    let count = 200;
+
+    // Função para atualizar o contador
+    function updateCounter() {
+      if (count >= 1) {
+        counterElement.textContent = count; // Atualiza o conteúdo do <span>
+        count -= 2; // Decrementa o contador em 2
+      } else {
+        clearInterval(intervalId); // Para o intervalo quando o contador atinge 0 ou menos
+        counterElement.textContent = count < 1 ? 1 : count; // Garante que não exiba números abaixo de 1
+      }
+    }
+
+    // Define um atraso de 30 minutos (1800000 ms) antes de iniciar o contador
+    const delay = 30 * 60 * 1000; // 30 minutos em milissegundos 30 * 60 * 1000
+    let intervalId; // Variável para armazenar o ID do intervalo
+
+    // Define um timeout para iniciar o intervalo após 30 minutos
+    setTimeout(() => {
+      intervalId = setInterval(updateCounter, 1000); // Inicia o contador
+    }, delay);
   </script>
 </html>

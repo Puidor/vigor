@@ -185,6 +185,11 @@ footer img {
   gap: 2rem;
 }
 
+.footer-menu a {
+  color: white;
+  text-decoration: none;
+}
+
 .footer-menu,
 .footer-descr {
   width: 100%;
