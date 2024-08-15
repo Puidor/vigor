@@ -33,4 +33,7 @@
     max-width: 45px;
     border-radius: 10px;
   }
+  footer img {
+    max-width: 200px;
+  }
 }
