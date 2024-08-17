@@ -33,7 +33,30 @@
     max-width: 45px;
     border-radius: 10px;
   }
+
   footer img {
-    max-width: 200px;
+    width: 180px;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-menu p {
+    font-size: 12px;
+  }
+
+  .footer-descr {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .footer-end {
+    font-size: 12px;
+    text-align: center;
   }
 }
